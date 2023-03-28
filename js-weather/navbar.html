@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+:root{
+    --white:#ffffff;
+    --off-white:#e5e5e5;
+    --trans-white-1:rgba(255,255,255,0.25);
+    --trans-white-2:rgba(255,255,255,0.1);
+    --blue-1:#62b8f5;
+    --blue-2:#4475ef;
+    --shadow:rgba(3,46,87,0.2);
+
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--blue-1);
+  border-bottom: var(--trans-white-2);
+}
+
+li {
+margin-left:5em;
+margin-right:5em;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: var(--off-white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: var(--trans-white-1);
+}
+
+.active {
+  background-color: var(--white);
+  color: var(--blue-2);
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.php">Weather app</a></li>
+  <!-- <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li> -->
+  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+
+</body>
+</html>
+
+
